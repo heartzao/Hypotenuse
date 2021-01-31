@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -8,11 +7,11 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    android:padding="30dp">
+    android:padding="20dp">
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="40dp"
         android:text="pythagorean Theorem : solve for hypotenuse"
         android:gravity="center"/>
 
@@ -26,25 +25,45 @@
             android:background="@drawable/triangle"/>
 
         <TextView
+            android:id="@+id/show"
             android:layout_width="150dp"
             android:layout_height="100dp"
-            android:text="C = ?"
+            android:text="C ?"
+            android:textSize="18dp"
             android:layout_alignParentRight="true"
             android:gravity="center"/>
+
     </RelativeLayout>
 
     <EditText
+        android:id="@+id/a"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="leg a"/>
+        android:layout_height="80dp"
+        android:hint="leg a"
+        android:gravity="center"
+        android:background="@drawable/a"/>
     <EditText
+        android:id="@+id/b"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="leg b"/>
+        android:layout_height="80dp"
+        android:hint="leg b"
+        android:gravity="center"
+        android:background="@drawable/b"/>
 
     <Button
+        android:id="@+id/Cal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Solve"/>
+        android:text="SOLVE"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Karunpon praserdnirun - 621310420"
+        android:gravity="center"
+        android:layout_marginTop="300dp"/>
+
 
 </LinearLayout>
